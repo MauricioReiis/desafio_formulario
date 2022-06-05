@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="assets/ico-logo.ico" />
+    <title>Formulário | Home</title>
+  </head>
+  <body>
+    <section id="sessionForm">
+      <form class="styleForm">
+        <img draggable="false" class="logo" src="./assets/logo.png" alt="Logo" />
+        <h1>Intern Sign Up</h1>
+
+        <label for="name">Full Name *</label>
+        <input type="text" name="name" id="name" placeholder="Name" />
+        <span class="error">Full name Invalid</span>
+
+        <label for="email">E-mail *</label>
+        <input type="email" name="email" id="email" placeholder="foo@bar.com" />
+        <span class="error">E-mail Invalid</span>
+
+        <label for="phone">Phone *</label>
+        <input type="number" name="Phone" id="phone" placeholder="(83) 00000-0000" />
+        <span class="error">Phone Invalid</span>
+
+        <label for="password">Password *</label>
+        <input type="password" name="password" id="password" placeholder="Enter your password" />
+        <span class="error">Password Invalid</span>
+
+        <label for="birthday">Birthday</label>
+        <input type="date" name="birthday" id="birthday" />
+        <span class="error">Age Invalid</span>
+
+        <label>
+          <input type="checkbox" id="checkbox" />
+          <span>I accept the terms and privacy</span>
+        </label>
+        <span class="error">You must the terms</span>
+        <button id="btn">Register</button>
+      </form>
+    </section>
+
+    <section id="sessionSucess">
+      <div>
+        <img draggable="false" class="logo" src="./assets/logo.png" alt="Logo" />
+        <span>Sucess!</span>
+        <button id="btn-two">Go Back!</button>
+      </div>
+    </section>
+  </body>
+</html>

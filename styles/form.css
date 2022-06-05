@@ -1,0 +1,51 @@
+#sessionForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+form h1 {
+  font-family: "Inter";
+}
+
+form label,
+form input {
+  font-family: "Nunito";
+}
+
+.logo {
+  width: 213px;
+}
+
+.styleForm {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  width: 500px;
+  height: 80vh;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #ccc;
+
+  display: grid;
+  /* grid-template-columns: ; */
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+}
+
+@media all and (max-width: 768px) {
+  .styleForm {
+    height: 100vh;
+    width: 100vw;
+    min-width: 0;
+  }
+}
